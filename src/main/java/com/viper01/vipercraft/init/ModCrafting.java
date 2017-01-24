@@ -14,7 +14,8 @@ public class ModCrafting {
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.rockhammer), "II", " S", 'I', Items.IRON_INGOT, 'S', Items.STICK);
 		// BLOCKS
 		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.cheese), "CCC", "CCC", "CCC", 'C', ModItems.cheese);
-		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.jar), " W ", "GGG", "GGG", 'W', new ItemStack(Blocks.PLANKS, 1, 0), 'G', new ItemStack(Blocks.STAINED_GLASS, 1, 0));
+		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.jar), " W ", "GCG", "GGG", 'W', new ItemStack(Blocks.PLANKS, 1, 0), 'C', new ItemStack(ModItems.cracker), 'G', new ItemStack(Blocks.STAINED_GLASS, 1, 0));
+		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.cookiejar), " W ", "GCG", "GGG", 'W', new ItemStack(Blocks.PLANKS, 1, 0), 'C', new ItemStack(ModItems.cracker), 'C', new ItemStack(Items.COOKIE), 'G', new ItemStack(Blocks.STAINED_GLASS, 1, 0));
 		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.dairychurn), "ISW", "WSW", "WWW", 'W', new ItemStack(Blocks.PLANKS, 1, 0), 'S', new ItemStack(Items.STICK), 'I', new ItemStack(Items.IRON_INGOT));
 		// TOOLS
 		GameRegistry.addShapedRecipe(new ItemStack(ModTools.ItemToolNetherAxe), "NN ", "NB ", " BH", 'N', Blocks.NETHER_BRICK, 'B', Items.BLAZE_ROD, 'H', new ItemStack(ModItems.rockhammer.setContainerItem(ModItems.rockhammer)));

@@ -33,6 +33,8 @@ public class RenderCookieJar extends TileEntitySpecialRenderer<TileEntityCookieJ
 			GlStateManager.rotate(90F, 1, 0, 0);
 			// - Adjusts it's position so it's centered in the cookie jar
 			GlStateManager.translate(0.5, 0.16, -0.05);
+			// - Adjusts the size of the cookie so it fits properly in the jar
+			GlStateManager.scale(0.8, 0.8, 0.8);
 			// Begin a loop that will allow each cookie (up to 10) to appear in the cookie jar
 			for(int i = 0; i < te.cookieCount; i++)
 			{

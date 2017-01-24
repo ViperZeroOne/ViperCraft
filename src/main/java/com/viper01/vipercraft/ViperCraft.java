@@ -5,6 +5,7 @@ import com.viper01.vipercraft.init.ModCrafting;
 import com.viper01.vipercraft.init.ModItems;
 import com.viper01.vipercraft.init.ModTools;
 import com.viper01.vipercraft.proxy.CommonProxy;
+import com.viper01.vipercraft.tileentity.TileEntityCookieJar;
 import com.viper01.vipercraft.tileentity.TileEntityJar;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -36,7 +37,7 @@ public class ViperCraft {
 		// Initializing and registering our ModItems.java
 		ModItems.init();
 		ModItems.register();
-		System.out.println("6 Items Registered!");
+		System.out.println("7 Items Registered!");
 
 		// Initializing and registering our ModBlocks.java		
 		ModBlocks.init();
@@ -46,7 +47,7 @@ public class ViperCraft {
 		// Initializing and registering our ModTools.java
 		ModTools.init();
 		ModTools.register();
-		System.out.println("6 Tools Registered!");
+		System.out.println("5 Tools Registered!");
 	}
 
 	@EventHandler
@@ -56,7 +57,7 @@ public class ViperCraft {
 		// Initializes the proxy and allows forge to choose client or server side
 		proxy.init();
 		ModCrafting.registerCraftingRecipes();
-		System.out.println("5 Crafting Recipes Registered!");
+		System.out.println("12 Crafting Recipes Registered!");
 		
 		
 		ModCrafting.registerSmeltingRecipes();
@@ -64,7 +65,7 @@ public class ViperCraft {
 		
 		// Registers the TileEntity classes
 		GameRegistry.registerTileEntity(TileEntityJar.class, Reference.MOD_ID + "TileEntityJar");
-		GameRegistry.registerTileEntity(TileEntityJar.class, Reference.MOD_ID + "TileEntityCookieJar");
+		GameRegistry.registerTileEntity(TileEntityCookieJar.class, Reference.MOD_ID + "TileEntityCookieJar");
 	}
 	
 	@EventHandler

@@ -1,5 +1,7 @@
 package com.viper01.vipercraft.tileentity;
 
+import com.viper01.vipercraft.init.ModItems;
+
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.init.Items;
@@ -9,6 +11,7 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 
+@SuppressWarnings("unused")
 public class TileEntityCookieJar extends TileEntity {
 
 	// When a jar is placed, initializes it with Zero cookies inside
