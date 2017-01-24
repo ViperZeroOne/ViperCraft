@@ -41,7 +41,7 @@ public class ViperCraft {
 		// Initializing and registering our ModBlocks.java		
 		ModBlocks.init();
 		ModBlocks.register();
-		System.out.println("4 Blocks Registered!");
+		System.out.println("5 Blocks Registered!");
 		
 		// Initializing and registering our ModTools.java
 		ModTools.init();
@@ -62,8 +62,9 @@ public class ViperCraft {
 		ModCrafting.registerSmeltingRecipes();
 		System.out.println("2 Smelting Recipes Registered!");
 		
-		// Registers our TileEntityJar as a Tile Entity
+		// Registers the TileEntity classes
 		GameRegistry.registerTileEntity(TileEntityJar.class, Reference.MOD_ID + "TileEntityJar");
+		GameRegistry.registerTileEntity(TileEntityJar.class, Reference.MOD_ID + "TileEntityCookieJar");
 	}
 	
 	@EventHandler

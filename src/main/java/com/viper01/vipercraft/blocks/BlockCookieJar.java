@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.viper01.vipercraft.Reference;
 import com.viper01.vipercraft.ViperCraft;
-import com.viper01.vipercraft.init.ModItems;
+import com.viper01.vipercraft.tileentity.TileEntityCookieJar;
 import com.viper01.vipercraft.tileentity.TileEntityJar;
 
 import net.minecraft.block.BlockHorizontal;
@@ -16,6 +16,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.BlockRenderLayer;
@@ -26,7 +27,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockJar extends BlockHorizontal implements ITileEntityProvider {
+public class BlockCookieJar extends BlockHorizontal implements ITileEntityProvider {
 
 	// TO GET AXIS BOUNDING BOX
 	// X Axis = East to West
@@ -40,7 +41,7 @@ public class BlockJar extends BlockHorizontal implements ITileEntityProvider {
 	
 	private static final AxisAlignedBB BOUNDING_BOX = new AxisAlignedBB(0.1875, 0, 0.1875, 0.8125, 0.625, 0.8125);
 	
-	public BlockJar() {
+	public BlockCookieJar() {
 		super(Material.GLASS);
 		setUnlocalizedName(Reference.VCBlocks.JAR.getUnlocalizedName());
 		setRegistryName(Reference.VCBlocks.JAR.getRegistryName());
@@ -113,23 +114,23 @@ public class BlockJar extends BlockHorizontal implements ITileEntityProvider {
 		if(!worldIn.isRemote) {
 			// Grabs the location of the activated object in the world
 			TileEntity tileEntity = worldIn.getTileEntity(pos);
-			// Makes sure the object detected is actually a jar
-			if(tileEntity instanceof TileEntityJar) {
-				// Assigns the jar to the tileEntity
-				TileEntityJar jar = (TileEntityJar) tileEntity;
+			// Makes sure the object detected is actually a cookie jar
+			if(tileEntity instanceof TileEntityCookieJar) {
+				// Assigns the cookiejar to the tileEntity
+				TileEntityCookieJar cookiejar = (TileEntityCookieJar) tileEntity;
 				if(heldItem != null) {
-					if(heldItem.getItem() == ModItems.cracker) {
-						// If the player is holding a cracker, attempt to add it to the jar
-						if(jar.addCracker()) {
-							// If a cracker is added to the jar, remove one cracker from your hand
+					if(heldItem.getItem() == Items.COOKIE) {
+						// If the player is holding a cookie, attempt to add it to the jar
+						if(cookiejar.addCookie()) {
+							// If a cookie is added to the jar, remove one cookie from your hand
 							heldItem.stackSize--;
-							// Return true only if a cracker was added to the jar
+							// Return true only if a cookie was added to the jar
 							return true;
 						}
 					}
 				}
 				// Should the player not be holding a cracker, or the jar be full, it will remove a cracker instead
-				jar.removeCracker();	
+				cookiejar.removeCookie();	
 			}
 		}
 		// Properly closing out the check for client/server side changes

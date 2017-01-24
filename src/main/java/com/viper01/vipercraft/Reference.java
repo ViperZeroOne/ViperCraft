@@ -56,6 +56,7 @@ public class Reference {
     	// Start your block constructors here, use commas after each line with a semi-colon after the last entry.
     	CHEESE("cheese", "BlockCheese"),
     	JAR("jar", "BlockJar"),
+    	COOKIEJAR("cookiejar", "BlockCookieJar"),
     	DAIRYCHURN("dairychurn", "BlockDairyChurn"),
     	VELOREANORE("veloreanore", "BlockVeloreanOre");
     	
