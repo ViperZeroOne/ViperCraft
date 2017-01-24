@@ -1,6 +1,7 @@
 package com.viper01.vipercraft.init;
 
 import com.viper01.vipercraft.blocks.BlockCheese;
+import com.viper01.vipercraft.blocks.BlockCookieJar;
 import com.viper01.vipercraft.blocks.BlockDairyChurn;
 import com.viper01.vipercraft.blocks.BlockJar;
 import com.viper01.vipercraft.blocks.BlockVeloreanOre;
@@ -17,6 +18,7 @@ public class ModBlocks {
 	// Defining the blocks
 	public static Block cheese;
 	public static Block jar;
+	public static Block cookiejar;
 	public static Block dairychurn;
 	public static Block veloreanore;
 
@@ -28,6 +30,7 @@ public class ModBlocks {
 		
 		cheese = new BlockCheese();
 		jar = new BlockJar();
+		cookiejar = new BlockCookieJar();
 		dairychurn = new BlockDairyChurn();
 		veloreanore = new BlockVeloreanOre();
 		
@@ -37,11 +40,12 @@ public class ModBlocks {
 	public static void register() {
 		registerBlock(cheese);
 		registerBlock(jar);
+		registerBlock(cookiejar);
 		registerBlock(dairychurn);
 		registerBlock(veloreanore);
 	}
 	
-
+	// Registers the block as an actual Block
 	private static void registerBlock(Block block) {
 		GameRegistry.register(block);
 		ItemBlock item = new ItemBlock(block);
@@ -53,6 +57,7 @@ public class ModBlocks {
 	public static void registerRenders() {
 		registerRender(cheese);
 		registerRender(jar);
+		registerRender(cookiejar);
 		registerRender(dairychurn);
 		registerRender(veloreanore);
 	}

@@ -1,7 +1,3 @@
 {
-    "parent": "v01_vipercraft:block/jar",
-    "textures": {
-        "0": "blocks/glass_white",
-        "1": "blocks/planks_oak"
-    }
+    "parent": "v01_vipercraft:block/cookiejar"   
 }

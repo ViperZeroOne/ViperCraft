@@ -54,7 +54,7 @@ public class TileEntityCookieJar extends TileEntity {
 	}
 
 	// The following overrides have to do with getting and writing information to the server/client in order
-	// to properly label the jar (as there can be more than 1 in the world) and update the cracker count.
+	// to properly label the jar (as there can be more than 1 in the world) and update the cookie count.
 	
 	@Override
 	public NBTTagCompound writeToNBT(NBTTagCompound compound) {

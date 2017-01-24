@@ -4,6 +4,7 @@ item.cheeseandcracker.name=Cracker and Cheese
 item.veloreandust.name=Velorean Dust
 item.veloreaningot.name=Velorean Ingot
 item.rockhammer.name=Rock Hammer
+item.firstaidkit.name=First Aid Kit
 
 item.nether_pickaxe.name=Nether Pickaxe
 item.nether_axe.name=Nether Axe
@@ -13,6 +14,7 @@ item.nether_sword.name=Nether Sword
 
 tile.cheese.name=Cheese Block
 tile.jar.name=Cracker Jar
+tile.cookiejar.name=Cookie Jar
 tile.dairychurn.name=Dairy Churn
 tile.veloreanore.name=Velorean Ore
 

@@ -5,7 +5,6 @@ import java.util.List;
 import com.viper01.vipercraft.Reference;
 import com.viper01.vipercraft.ViperCraft;
 import com.viper01.vipercraft.tileentity.TileEntityCookieJar;
-import com.viper01.vipercraft.tileentity.TileEntityJar;
 
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
@@ -43,8 +42,8 @@ public class BlockCookieJar extends BlockHorizontal implements ITileEntityProvid
 	
 	public BlockCookieJar() {
 		super(Material.GLASS);
-		setUnlocalizedName(Reference.VCBlocks.JAR.getUnlocalizedName());
-		setRegistryName(Reference.VCBlocks.JAR.getRegistryName());
+		setUnlocalizedName(Reference.VCBlocks.COOKIEJAR.getUnlocalizedName());
+		setRegistryName(Reference.VCBlocks.COOKIEJAR.getRegistryName());
 		setHardness(1.0F);
 		setCreativeTab(ViperCraft.CREATIVE_TAB);
 		setSoundType(SoundType.GLASS);
@@ -137,10 +136,9 @@ public class BlockCookieJar extends BlockHorizontal implements ITileEntityProvid
 		return true;
 	}
 	
-	// Override so when a jar is placed it creates a unique identity for the jar
-	// This prevents two jars from getting their contents mixed up
+	// Override so when a cookiejar is placed it creates a unique identity for the cookiejar
 	@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta) {
-		return new TileEntityJar();
+		return new TileEntityCookieJar();
 	}
 }

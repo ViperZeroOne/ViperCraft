@@ -1,8 +1,8 @@
 {
     "variants": {
-        "facing=north": { "model": "v01_vipercraft:jar" },
-        "facing=east":  { "model": "v01_vipercraft:jar", "y": 90 },
-        "facing=south": { "model": "v01_vipercraft:jar", "y": 180 },
-        "facing=west":  { "model": "v01_vipercraft:jar", "y": 270 }
+        "facing=north": { "model": "v01_vipercraft:cookiejar" },
+        "facing=east":  { "model": "v01_vipercraft:cookiejar", "y": 90 },
+        "facing=south": { "model": "v01_vipercraft:cookiejar", "y": 180 },
+        "facing=west":  { "model": "v01_vipercraft:cookiejar", "y": 270 }
     }
 }
