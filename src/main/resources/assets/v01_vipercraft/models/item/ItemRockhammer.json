@@ -1,0 +1,28 @@
+{
+    "parent": "builtin/generated",
+    "textures": {
+        "layer0": "v01_vipercraft:items/rockhammer"
+    },
+    "display": {
+        "ground": {
+            "scale":[ 0.35, 0.35, 0.35 ]
+        },
+        "thirdperson_righthand": {
+            "scale": [ 0.5, 0.5, 0.5 ],
+             "rotation": [ 0, -90, 55 ]
+        },
+        "thirdperson_lefthand": {
+            "scale": [ 0.5, 0.5, 0.5 ],
+             "rotation": [ 0, 90, -55 ]
+        },
+        "firstperson_righthand": {
+            "scale": [ 0.5, 0.5, 0.5 ],
+             "rotation": [ 0, -90, 55 ]
+        },
+        "firstperson_lefthand": {
+            "scale": [ 0.5, 0.5, 0.5 ],
+             "rotation": [ 0, 90, -55 ]
+        }
+    }
+}
+    

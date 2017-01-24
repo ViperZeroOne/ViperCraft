@@ -1,0 +1,15 @@
+[
+{
+  "modid": "v01_vipercraft",
+  "name": "Viper01's ViperCraft Mod",
+  "description": "my first attempt at a mod",
+  "version": "0.01a",
+  "mcversion": "1.10.2",
+  "url": "www.viper01.com",
+  "updateUrl": "",
+  "authorList": ["ViperZeroOne"],
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

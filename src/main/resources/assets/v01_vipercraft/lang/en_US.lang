@@ -1,0 +1,19 @@
+item.cheese.name=Cheese
+item.cracker.name=Cracker
+item.cheeseandcracker.name=Cracker and Cheese
+item.veloreandust.name=Velorean Dust
+item.veloreaningot.name=Velorean Ingot
+item.rockhammer.name=Rock Hammer
+
+item.nether_pickaxe.name=Nether Pickaxe
+item.nether_axe.name=Nether Axe
+item.nether_hoe.name=Nether Hoe
+item.nether_shovel.name=Nether Spade
+item.nether_sword.name=Nether Sword
+
+tile.cheese.name=Cheese Block
+tile.jar.name=Cracker Jar
+tile.dairychurn.name=Dairy Churn
+tile.veloreanore.name=Velorean Ore
+
+itemGroup.ViperCraft=ViperCraft

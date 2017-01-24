@@ -1,0 +1,21 @@
+{
+    "parent": "builtin/generated",
+    "textures": {
+        "layer0": "v01_vipercraft:items/cracker"
+    },   
+    "display": {
+        "ground": {
+            "scale":[ 0.55, 0.55, 0.55 ]
+        },
+        "thirdperson_righthand": {
+            "scale": [ 0.6, 0.6, 0.6 ]
+        },
+        "firstperson_righthand": {
+            "scale": [ 0.60, 0.60, 0.60 ]
+        },
+        "firstperson_lefthand": {
+            "scale": [ 0.60, 0.60, 0.60 ]
+        }
+    }
+}
+    
