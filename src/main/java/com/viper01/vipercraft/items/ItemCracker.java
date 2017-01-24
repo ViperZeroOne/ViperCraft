@@ -2,9 +2,7 @@ package com.viper01.vipercraft.items;
 
 import com.viper01.vipercraft.Reference;
 import com.viper01.vipercraft.ViperCraft;
-import com.viper01.vipercraft.ViperTab;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemFood;
 
 public class ItemCracker extends ItemFood {

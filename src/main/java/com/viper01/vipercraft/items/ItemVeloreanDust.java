@@ -3,9 +3,7 @@ package com.viper01.vipercraft.items;
 import com.viper01.vipercraft.Reference;
 import com.viper01.vipercraft.ViperCraft;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemFood;
 
 public class ItemVeloreanDust extends Item {
 

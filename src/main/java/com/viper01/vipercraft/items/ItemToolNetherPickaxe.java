@@ -4,7 +4,6 @@ import com.viper01.vipercraft.Reference;
 import com.viper01.vipercraft.ViperCraft;
 
 import net.minecraft.item.ItemPickaxe;
-import net.minecraft.util.ResourceLocation;
 
 public class ItemToolNetherPickaxe extends ItemPickaxe {
 

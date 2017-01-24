@@ -5,7 +5,6 @@ import com.viper01.vipercraft.ViperCraft;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class BlockCheese extends Block {
 

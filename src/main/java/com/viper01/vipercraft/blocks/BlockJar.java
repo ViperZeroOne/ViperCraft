@@ -9,9 +9,9 @@ import com.viper01.vipercraft.tileentity.TileEntityJar;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.ITileEntityProvider;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -44,7 +44,7 @@ public class BlockJar extends Block implements ITileEntityProvider {
 		setRegistryName(Reference.VCBlocks.JAR.getRegistryName());
 		setHardness(1.0F);
 		setCreativeTab(ViperCraft.CREATIVE_TAB);
-		setSoundType(blockSoundType.GLASS);
+		setSoundType(SoundType.GLASS);
 	}
 	
 	// Performs an override that lets Minecraft know this object isn't a full-size cube

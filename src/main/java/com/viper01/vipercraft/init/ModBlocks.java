@@ -4,8 +4,6 @@ import com.viper01.vipercraft.blocks.BlockCheese;
 import com.viper01.vipercraft.blocks.BlockDairyChurn;
 import com.viper01.vipercraft.blocks.BlockJar;
 import com.viper01.vipercraft.blocks.BlockVeloreanOre;
-import com.viper01.vipercraft.items.ItemCheese;
-import com.viper01.vipercraft.items.ItemCracker;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;

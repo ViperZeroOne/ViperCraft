@@ -1,26 +1,20 @@
 package com.viper01.vipercraft.init;
 
-import com.viper01.vipercraft.Reference;
-import com.viper01.vipercraft.items.ItemFirstAidKit;
 import com.viper01.vipercraft.items.ItemToolNetherAxe;
 import com.viper01.vipercraft.items.ItemToolNetherHoe;
 import com.viper01.vipercraft.items.ItemToolNetherPickaxe;
 import com.viper01.vipercraft.items.ItemToolNetherShovel;
 import com.viper01.vipercraft.items.ItemToolNetherSword;
 
-import net.minecraft.init.Blocks;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemSpade;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.EnumHelper;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.item.Item;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 

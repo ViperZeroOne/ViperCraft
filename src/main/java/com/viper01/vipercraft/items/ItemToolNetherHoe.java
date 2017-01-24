@@ -1,7 +1,5 @@
 package com.viper01.vipercraft.items;
 
-import net.minecraft.util.ResourceLocation;
-
 import com.viper01.vipercraft.Reference;
 import com.viper01.vipercraft.ViperCraft;
 
