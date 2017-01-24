@@ -27,3 +27,6 @@
 /gradle.properties
 /forge*.txt
 /ViperCraft
+/CREDITS-fml.txt
+/*.launch
+/*.gradle
