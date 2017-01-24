@@ -9,7 +9,7 @@ import net.minecraft.entity.item.EntityItem;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
-// Calling the special render and linking it to the cookie jar (TileEntityJar)
+// Calling the special render and linking it to the cookie jar (TileEntityCookieJar)
 public class RenderCookieJar extends TileEntitySpecialRenderer<TileEntityCookieJar>{
 
 	// Calling an item (cookie) to become a visual object (ITEM) which can be placed in theWorld
@@ -27,18 +27,18 @@ public class RenderCookieJar extends TileEntitySpecialRenderer<TileEntityCookieJ
 		GlStateManager.pushMatrix();
 		{
 			// Perform adjustments to the starting location of the cookie, to center it properly;
-			// - Places the object at the location of the jar
+			// - Places the object at the location of the cookie jar
 			GlStateManager.translate(x, y, z);
-			// - Rotates the object 90 degrees so it's laying down in the jar
+			// - Rotates the object 90 degrees so it's laying down in the cookie jar
 			GlStateManager.rotate(90F, 1, 0, 0);
-			// - Adjusts it's position so it's centered in the jar
+			// - Adjusts it's position so it's centered in the cookie jar
 			GlStateManager.translate(0.5, 0.16, -0.05);
-			// Begin a loop that will allow each cookie (up to 10) to appear in the jar
+			// Begin a loop that will allow each cookie (up to 10) to appear in the cookie jar
 			for(int i = 0; i < te.cookieCount; i++)
 			{
-				//Call for the rendering of the cookie in the jar
+				//Call for the rendering of the cookie in the cookie jar
 				Minecraft.getMinecraft().getRenderManager().doRenderEntity(ITEM, 0, 0, 0, 0F, 0F, false);
-				//Make a slight adjustment in the location of each consecutive cookie so they appear stacked in the jar
+				//Make a slight adjustment in the location of each consecutive cookie so they appear stacked in the cookie jar
 				GlStateManager.translate(0, 0, -0.046);
 				//Add a slight rotation so the stack doesn't look perfect
 				GlStateManager.rotate(1, 0, 0, 1);

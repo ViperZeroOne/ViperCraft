@@ -5,7 +5,7 @@ ViperCraft Mod for MinecraftForge
 Created By: ViperZeroOne
 
 This is my first mod which began simply as a way to learn the
-fundimentals of Java while modding Minecraft.  It quickly grew
+fundamentals of Java while modding Minecraft.  It quickly grew
 and became more than I had first intended it to be.  As I
 continue to add to this runaway project I hope others will
 enjoy the hard work I'm putting into it.
@@ -19,10 +19,14 @@ This is a list of all the currently implemented and working
 features.  Features that are on the drawing board, or not yet
 functional, will not appear in this list.
 
-- New food items
-- A new tool set made from NetherBrick and Blaze Rods
-- A new tool (rock hammer) to be used in crafting
-- Visual jars for storing 10 food items (cracker / cookie)
+- Several new edible food items
+- A new tool set made from Nether Brick and Blaze Rods
+- A new tool (rock hammer) to be used in crafting recipes
+- Glass jars with visuals for storing cookies & crackers
+- A new ore block called Velorean
+- Dust and Ingot versions of the Velorean ore
+- A First Aid Kit that will restore 5 hearts
+- A Dairy Churn block, currently only a visual object
 
 
 --------------------------------------------------------------
