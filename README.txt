@@ -16,7 +16,7 @@ BRANCHES
 
 Master  = Protected branch with tested code that is of either
 	  release or release quality.  This code is suspected
-          to be relatively bug-free.  All releases compiles will
+          to be relatively bug-free.  All release compiles will
 	  be done using the Master branch.  If you are using a
 	  compile (.JAR) from the Master Branch and experience a
 	  bug, please report it.
