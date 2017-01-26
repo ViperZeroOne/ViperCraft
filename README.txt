@@ -14,20 +14,24 @@ enjoy the hard work I'm putting into it.
 BRANCHES
 --------------------------------------------------------------
 
-Master  = Protected branch with tested code that is confirmed
-          to be relatively bug-free.  All JAR compiles will
-	  be done using the Master branch.  If you find a bug
-     	  please report it there.
+Master  = Protected branch with tested code that is of either
+		  release or release quality.  This code is suspected
+          to be relatively bug-free.  All releases compiles will
+	  be done using the Master branch.  If you are using a
+	  compile (.JAR) from the Master Branch and experience a
+	  bug, please report it.
 		 
 Working = Active branch where all minor updates are pushed to
           and as such the code could contain a lot of bugs.
-	  Do not file bug reports on the working branch!
+	  Do not file bug reports on the working branch.
 		  
 Ver#    = In the event of an upgrade to a new Minecraft version
-          the previous version of this mod will be archived
-	  in a branch named after it's minecraft version. These
-	  branches will no longer be updated, do not file bug
-	  reports on these branches!
+          the previous Master version of this mod will be archived
+	  in a branch named after it's minecraft version. While you
+	  can still use these branches for earlier versions of
+	  Minecraft, the branches will no longer be updated or 
+	  supported once archived.  Do not file bug reports on
+	  these archived branches.
 
 --------------------------------------------------------------
 MOD FEATURES
