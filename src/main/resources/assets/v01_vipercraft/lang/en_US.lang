@@ -17,5 +17,6 @@ tile.jar.name=Cracker Jar
 tile.cookiejar.name=Cookie Jar
 tile.dairychurn.name=Dairy Churn
 tile.veloreanore.name=Velorean Ore
+tile.veloreanchest.name=Velorean Chest
 
 itemGroup.ViperCraft=ViperCraft
