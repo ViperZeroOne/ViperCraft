@@ -7,6 +7,7 @@ import com.viper01.vipercraft.init.ModTools;
 import com.viper01.vipercraft.proxy.CommonProxy;
 import com.viper01.vipercraft.tileentity.TileEntityCookieJar;
 import com.viper01.vipercraft.tileentity.TileEntityJar;
+import com.viper01.vipercraft.tileentity.TileEntityVeloreanChest;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
@@ -66,6 +67,7 @@ public class ViperCraft {
 		// Registers the TileEntity classes
 		GameRegistry.registerTileEntity(TileEntityJar.class, Reference.MOD_ID + "TileEntityJar");
 		GameRegistry.registerTileEntity(TileEntityCookieJar.class, Reference.MOD_ID + "TileEntityCookieJar");
+		GameRegistry.registerTileEntity(TileEntityVeloreanChest.class, Reference.MOD_ID + "TileEntityVeloreanChest");
 	}
 	
 	@EventHandler

@@ -58,7 +58,8 @@ public class Reference {
     	JAR("jar", "BlockJar"),
     	COOKIEJAR("cookiejar", "BlockCookieJar"),
     	DAIRYCHURN("dairychurn", "BlockDairyChurn"),
-    	VELOREANORE("veloreanore", "BlockVeloreanOre");
+    	VELOREANORE("veloreanore", "BlockVeloreanOre"),
+    	VELOREANCHEST("veloreanchest", "BlockVeloreanChest");
     	
     	private String unlocalizedName;
     	private String registryName;

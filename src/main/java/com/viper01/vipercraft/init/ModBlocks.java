@@ -4,9 +4,11 @@ import com.viper01.vipercraft.blocks.BlockCheese;
 import com.viper01.vipercraft.blocks.BlockCookieJar;
 import com.viper01.vipercraft.blocks.BlockDairyChurn;
 import com.viper01.vipercraft.blocks.BlockJar;
+import com.viper01.vipercraft.blocks.BlockVeloreanChest;
 import com.viper01.vipercraft.blocks.BlockVeloreanOre;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -21,6 +23,7 @@ public class ModBlocks {
 	public static Block cookiejar;
 	public static Block dairychurn;
 	public static Block veloreanore;
+	public static Block veloreanchest;
 
 	public static void init() {
 		
@@ -33,6 +36,7 @@ public class ModBlocks {
 		cookiejar = new BlockCookieJar();
 		dairychurn = new BlockDairyChurn();
 		veloreanore = new BlockVeloreanOre();
+		veloreanchest = new BlockVeloreanChest(Material.WOOD);
 		
 	}
 	
@@ -43,6 +47,7 @@ public class ModBlocks {
 		registerBlock(cookiejar);
 		registerBlock(dairychurn);
 		registerBlock(veloreanore);
+		registerBlock(veloreanchest);
 	}
 	
 	// Registers the block as an actual Block
@@ -60,6 +65,7 @@ public class ModBlocks {
 		registerRender(cookiejar);
 		registerRender(dairychurn);
 		registerRender(veloreanore);
+		registerRender(veloreanchest);
 	}
 	
 	// Method for registering block object renders
