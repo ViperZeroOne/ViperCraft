@@ -6,6 +6,7 @@ import com.viper01.vipercraft.tileentity.TileEntityVeloreanChest;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.util.ResourceLocation;
 
 public class GUIVeloreanChest extends GuiContainer{
 
@@ -33,7 +34,7 @@ public class GUIVeloreanChest extends GuiContainer{
 	
 	@Override
 	protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-		super.drawGuiContainerForegroundLayer(mouseX, mouseY);
+		String s = this.te.getDisplayName()
 	}
 
 }
