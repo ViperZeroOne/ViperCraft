@@ -1,25 +1,39 @@
 package com.viper01.vipercraft.gui;
 
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.world.World;
-import net.minecraftforge.fml.common.network.IGuiHandler;
+import com.viper01.vipercraft.Reference;
+import com.viper01.vipercraft.tileentity.TileEntityVeloreanChest;
 
-public class GUIVeloreanChest implements IGuiHandler{
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.inventory.IInventory;
 
-	public static final int VELOREAN_CHEST_GUI = 0;
+public class GUIVeloreanChest extends GuiContainer{
+
+	private IInventory playerInv;
+	private TileEntityVeloreanChest te;
 	
-	@Override
-	public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
-		if(ID == VELOREAN_CHEST_GUI)
-			return new ContainerVeloreanChest();
-		return null;
+	public GUIVeloreanChest(IInventory playerInv, TileEntityVeloreanChest te) {
+		super(new ContainerVeloreanChest(playerInv, te));
+		
+		this.playerInv = playerInv;
+		this.te = te;
+		
+		// This is the overall size of the GUI
+		// Default = x176 y166
+		this.xSize = 176;
+		this.ySize = 166;
 	}
 
 	@Override
-	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
-		if(ID == VELOREAN_CHEST_GUI)
-			return new GuiVeloreanChest();
-		return null;
+	protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
+		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+		this.mc.getTextureManager().bindTexture(new ResourceLocation(Reference.MOD_ID + ":" + "textures/gui/container/veloreanchestgui.png"));
+		this.drawTexturedModalRect(this.guiLeft, this.guiTop, 0, 0, this.xSize, this.ySize);
+	}
+	
+	@Override
+	protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
+		super.drawGuiContainerForegroundLayer(mouseX, mouseY);
 	}
 
 }

@@ -2,7 +2,7 @@ package com.viper01.vipercraft.blocks;
 
 import com.viper01.vipercraft.Reference;
 import com.viper01.vipercraft.ViperCraft;
-import com.viper01.vipercraft.gui.GUIVeloreanChest;
+import com.viper01.vipercraft.gui.VeloreanChestGUIHandler;
 import com.viper01.vipercraft.tileentity.TileEntityVeloreanChest;
 
 import net.minecraft.block.BlockContainer;
@@ -39,7 +39,7 @@ public class BlockVeloreanChest extends BlockContainer {
 	
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, ItemStack helditem, EnumFacing side, float hitX, float hitY, float hitZ) {
 		if(!worldIn.isRemote) {
-			playerIn.openGui(Reference.MOD_ID + "GUIVeloreanChest", GUIVeloreanChest.VELOREAN_CHEST_GUI, worldIn, pos.getX(), pos.getY(), pos.getZ());
+			playerIn.openGui(Reference.MOD_ID + "GUIVeloreanChest", VeloreanChestGUIHandler.VELOREAN_CHEST_GUI, worldIn, pos.getX(), pos.getY(), pos.getZ());
 		}
 		return true;
 	}

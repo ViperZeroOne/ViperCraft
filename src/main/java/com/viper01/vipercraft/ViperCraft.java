@@ -1,6 +1,6 @@
 package com.viper01.vipercraft;
 
-import com.viper01.vipercraft.gui.GUIVeloreanChest;
+import com.viper01.vipercraft.gui.VeloreanChestGUIHandler;
 import com.viper01.vipercraft.init.ModBlocks;
 import com.viper01.vipercraft.init.ModCrafting;
 import com.viper01.vipercraft.init.ModItems;
@@ -70,7 +70,7 @@ public class ViperCraft {
 		System.out.println("Tile Entities Registered");
 		
 		// Registers the GUI classes
-		NetworkRegistry.INSTANCE.registerGuiHandler(Reference.MOD_ID + "GUIVeloreanChest", new GUIVeloreanChest());
+		NetworkRegistry.INSTANCE.registerGuiHandler(Reference.MOD_ID + "GUIVeloreanChest", new VeloreanChestGUIHandler());
 		System.out.println("Custom GUI's Registered");
 
 	}

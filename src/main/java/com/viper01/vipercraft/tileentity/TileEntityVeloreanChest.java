@@ -56,6 +56,12 @@ public class TileEntityVeloreanChest extends TileEntity implements IInventory {
 		return 108;
 	}
 
+	// This sets the limit of how many items a stack in the chest can hold (default 64)
+	@Override
+	public int getInventoryStackLimit() {
+		return 64;
+	}
+		
 	// Chest slots start at 1 but index slots start at 0
 	// This override checks the contents of the slots in the chest and enters that
 	// information into an array called "inventory", but it only reads slot contents
@@ -115,12 +121,6 @@ public class TileEntityVeloreanChest extends TileEntity implements IInventory {
 			stack = null;
 		this.inventory[index] = stack;
 		this.markDirty();
-	}
-
-	// This sets the limit of how many items a stack in the chest can hold (default 64)
-	@Override
-	public int getInventoryStackLimit() {
-		return 128;
 	}
 
 	// Testing to see if the player is close enough to use the chest
