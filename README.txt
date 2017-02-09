@@ -39,7 +39,8 @@ MOD FEATURES
 
 This is a list of all the currently implemented and working
 features.  Features that are on the drawing board, or not yet
-functional, will not appear in this list.
+functional, will not appear in this list but will instead appear
+in the "Wiki" area.
 
 - Several new edible food items
 - A new tool set made from Nether Brick and Blaze Rods
